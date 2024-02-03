@@ -2,6 +2,8 @@
 
 This project implements a simple E-Commerce Tabs Layout using HTML, CSS, and JavaScript. It allows users to browse products in different categories (Men, Women, Kids) and displays product details in a clean and responsive layout.
 
+Link: https://endearing-pika-af6c4e.netlify.app
+
 ## Table of Contents
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
