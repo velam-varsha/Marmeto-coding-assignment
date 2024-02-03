@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    /* width: 100%; */
+    width: 80%; /* Adjusted width to 80% */
+    margin: 0 auto; /* Centering the container */
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.select-head {
+    padding-bottom: 50px;
+}
+
+.select {
+    position: absolute;
+    width: 178px;
+    height: 19px;
+    left: calc(50% - 178px/2 + 10px);
+    top: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 10px;
+}
+
+.bar-head {
+    padding-top: 20px;
+    height: 60px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.group1 {
+    display: flex;
+    width: 100%; /*Adjusted width to 80%*/
+    height: 50px;
+    left: 50px;
+    top: 54px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-radius: 2px;
+}
+
+.men,
+.women,
+.kid {
+    flex: 1;
+    height: 100%;
+    margin: 0 0;
+    border: none;
+    cursor: pointer;
+    width: calc(100% / 3);
+    transition: color 0.2s;
+}
+
+.men.clicked,
+.women.clicked,
+.kid.clicked {
+    background-color: #000000;
+    color: white;
+}
+
+#product-container {
+    display: flex;
+    width: 95%; /* Adjusted width to 80% */
+    margin: 0 auto; /* Centering the container */
+    /* width: 100%; */
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 10px;
+    background-color: #f0f0f0;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 1px;
+    width: calc(30% - 10px); /* Adjust to occupy 1/3 of the container with a 10px gap */
+    height: 26rem;
+    max-width: 300px;
+    word-wrap: break-word;
+    background-color: #fff;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    /* Set the width of the image container */
+    height: 73%;
+    /* Set the height of the image container */
+    overflow: hidden;
+    /* Hide overflow content */
+}
+.badge {
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    font-size: 10px;
+}
+
+.product-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.product-details {
+    text-align: start;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 6px;
+}
+
+p {
+    margin: 0;
+    color: #333;
+}
+
+.vendor {
+    flex: 4;
+    padding-top: 6px;
+    padding-right: 4px;
+    font-size: 10px;
+    padding-left: 4px;
+}
+
+.title {
+    flex: 6;
+    padding-top: 2px;
+    padding-left: 3px;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    /* Ensure the title does not overflow the container */
+
+}
+
+.additional-details {
+    text-align: start;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 4px;
+}
+
+.price,
+.compare-at-price,
+.discount {
+    margin: 0;
+    font-size: 12px;
+    color: black;
+    padding-left: 4px;
+    padding-top: 3px;
+    font-size: 10px;
+}
+
+.discount {
+    color: red;
+    padding-right: 3px;
+}
+
+.compare-at-price {
+    color: #818589;
+}
+
+.add-to-cart-button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.add-to-cart-button:hover {
+    background-color: #333;
+}
+
+/* Media queries for adjusting height based on screen width */
+@media screen and (max-width: 767px) {
+    .product-card {
+        height: 16rem; /* Adjust height for mobile screens */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .product-card {
+        height: 20rem; /* Adjust height for tablet screens */
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .product-card {
+        height: 24rem; /* Adjust height for desktop screens */
+    }
+}

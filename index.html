@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Tabs Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-v0afl/Ipq9pOVCXGTJIBq9/6fimGbG4ld97B5T9eOm21V8qj8qFAzv93aJeHKRwI" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="select-head">
+        <div>
+            <h1 class="select">SELECT YOUR CHOICE</h1>
+        </div>
+    </section>
+
+    <section class="bar-head">
+        <div class="group1">
+            <button class="men" onclick="changeColor(this)" data-category="men">Men</button>
+            <button class="women" onclick="changeColor(this)" data-category="women">Women</button>
+            <button class="kid" onclick="changeColor(this)" data-category="kids">Kids</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="product-container">
+        <!-- Products will be loaded here by JavaScript -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
